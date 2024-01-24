@@ -1,4 +1,3 @@
-```markdown
 # Proyecto de Microservicios
 
 Este proyecto sirve como ejemplo de la creación de dos microservicios que se comunican entre sí.
@@ -13,14 +12,14 @@ El archivo principal es `servicio.js`, que inicia un servidor Express y define v
 
 Para instalar las dependencias del Microservicio 1, ejecuta el siguiente comando en tu terminal desde la raíz del proyecto:
 
-```bash
+```
 cd microservicio1
 npm install
 ```
 
 Luego, para iniciar el Microservicio 1, ejecuta:
 
-```bash
+```
 npm start
 ```
 
@@ -36,14 +35,14 @@ Al igual que el Microservicio 1, el archivo principal es `servicio.js`. En este 
 
 Para instalar las dependencias del Microservicio 2, ejecuta el siguiente comando en tu terminal desde la raíz del proyecto:
 
-```bash
+```
 cd microservicio2
 npm install
 ```
 
 Luego, para iniciar el Microservicio 2, ejecuta:
 
-```bash
+```
 npm start
 ```
 
@@ -57,7 +56,7 @@ El cliente se encuentra en la carpeta `cliente-microservicios` y utiliza React c
 
 Para instalar las dependencias del Cliente de Microservicios, ejecuta el siguiente comando en tu terminal desde la raíz del proyecto:
 
-```bash
+```
 cd cliente-microservicios
 npm install
 ```
