@@ -1,4 +1,4 @@
-```bash
+```markdown
 # Proyecto de Microservicios
 
 Este proyecto sirve como ejemplo de la creación de dos microservicios que se comunican entre sí.
@@ -7,13 +7,20 @@ Este proyecto sirve como ejemplo de la creación de dos microservicios que se co
 
 El Microservicio 1 se encuentra en la carpeta `microservicio1` y se ejecuta en el puerto 3001. Este microservicio recibe solicitudes HTTP y las procesa.
 
-El archivo principal es `servicio.js`, que inicia un servidor Express y define varias rutas.
+El archivo principal es `servicio.js`, que inicia un servidor Express y define varias rutas. En este microservicio, se realiza una operación ficticia (`realizarOperacionMicroservicio1`) que se ejecuta cada 5 segundos y cambia el color del texto de la respuesta.
 
 ### Instalación y Ejecución
+
+Para instalar las dependencias del Microservicio 1, ejecuta el siguiente comando en tu terminal desde la raíz del proyecto:
 
 ```bash
 cd microservicio1
 npm install
+```
+
+Luego, para iniciar el Microservicio 1, ejecuta:
+
+```bash
 npm start
 ```
 
@@ -23,13 +30,20 @@ En caso de existir errores, inicia el microservicio con el comando `nodemon serv
 
 El Microservicio 2 se encuentra en la carpeta `microservicio2` y se ejecuta en el puerto 3002. Este microservicio recibe solicitudes del Microservicio 1 y devuelve respuestas.
 
-Al igual que el Microservicio 1, el archivo principal es `servicio.js`.
+Al igual que el Microservicio 1, el archivo principal es `servicio.js`. En este microservicio, se realiza una operación ficticia (`realizarOperacionMicroservicio2`) que se ejecuta cada 5 segundos y cambia el color del texto de la respuesta. Además, se puede cambiar manualmente el color haciendo clic en un botón.
 
 ### Instalación y Ejecución
+
+Para instalar las dependencias del Microservicio 2, ejecuta el siguiente comando en tu terminal desde la raíz del proyecto:
 
 ```bash
 cd microservicio2
 npm install
+```
+
+Luego, para iniciar el Microservicio 2, ejecuta:
+
+```bash
 npm start
 ```
 
@@ -41,20 +55,15 @@ El cliente se encuentra en la carpeta `cliente-microservicios` y utiliza React c
 
 ### Instalación y Ejecución
 
+Para instalar las dependencias del Cliente de Microservicios, ejecuta el siguiente comando en tu terminal desde la raíz del proyecto:
+
 ```bash
 cd cliente-microservicios
 npm install
-npm run dev
 ```
 
-## Dependencias
-
-Este proyecto utiliza las siguientes dependencias:
+Luego, para iniciar el cliente, ejecuta:
 
 ```bash
-express: Un marco de aplicación web para Node.js
-axios: Un cliente HTTP basado en promesas para el navegador y Node.js
-nodemon: Una herramienta que ayuda a desarrollar aplicaciones basadas en node.js al reiniciar automáticamente la aplicación de nodo cuando se detectan cambios de archivo en el directorio.
-react: Biblioteca de JavaScript para construir interfaces de usuario.
-vite: Herramienta de construcción web que es rápida, eficiente y modular.
+npm run dev
 ```
